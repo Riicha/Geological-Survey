@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Geo-Seismic Survey</title>
+  
+  <!------------Bootstrap-------------------------------->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">      
+  <!------------ Leaflet CSS  --------------------------->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css"> 
+  <!------------ CSS ------------------------------------>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="jumbotron">
+    <h2>Weekly Earthquake Information</h2> 
+  </div>
+
+  <div class="Feature">
+    <p>Last 7 Days Data Obtained From :- <a href="https://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php">USGS Website</a></a></p>
+    <p style="font-size:18px"><strong>Features:</strong></p>
+    <p>#  Select from Earthquake Key(s) to view earthquakes all over the world during last 7 days.</p>
+    <p>#  Select Fault line to see the 'Tectonic Plates'.</p>
+    <p>#  To view the Timeline un-check the Maps in the key(s).</p>
+  </div>
+
+  <!------------------- The div that holds our map ---------------->
+  <div id="map"></div> 
+  </div>
+
+ 
+
+<!------------------- Scripts -------------------------------->
+<!---------- D3 ---------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+<!------------ Leaflet JavaScript ---------------------------->
+<script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+
+
+<script type="text/javascript" src="js/logic.js"></script>
+
+ <!------------ Leaflet Timeline ----------------------->
+ <script src="js/leaflet.timeline.js"></script>
+
+</body>
+
+ <!--------------------Footer ------------------------------------>
+ <footer class="page-footer center-on-small-only stylish-color-dark">
+        <br>
+        <!------------------- Copyright --------------------------------->
+        <div class="footer-copyright">
+        <div class="container-fluid">
+            <p style="text-align: center;">
+            © 2018 Copyright: Riicha Mohan
+            </p>
+        </div>
+        </div>
+        <!--/.Copyright-->
+      </footer>
+      <!--/.Footer-->
+
+</html>
